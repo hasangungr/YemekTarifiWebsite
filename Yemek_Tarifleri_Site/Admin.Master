@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Yemek_Tarifleri_Site.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            font-size: large;
+            height: 24px;
+            width: 186px;
+        }
+        .auto-style3 {
+            float: left;
+            width: 200px;
+            height: 246px;
+        }
+        .auto-style4 {
+            width: 186px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; background-color: #0066FF; margin-left: 300px;">
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px">&nbsp;</div>
+        <div style="margin-left: 300px; width: 700px; height: 300px; color: #FF9900;">
+
+
+                <div style=" background-color:#3399FF; color: #000000;" class="auto-style3">
+                    <div style="height:auto">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style2"><strong>MENÜLER</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4"><a href ="AdminYemekler.aspx">YEMEKLER</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4"><a href="Yorumlar.aspx">YORUMLAR</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4">     <a href ="AdminMesajlar.aspx">        MESAJLAR</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4">  <a href ="AdminGununYemegi.aspx"> GÜNÜN YEMEĞİ</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4"><a href="AdminTarifler.aspx">TARİFLER</a></td>
+                            </tr>
+                            <tr>
+                                <td style="border-style: double; border-width: inherit; border-color: #000066" class="auto-style4"><a href ="AdminHakkimizda.aspx">HAKKIMIZDA</a></td>
+                            </tr>
+                            </table>
+                    </div>
+                </div>
+                 <div style="float:left; width: 450px; height: auto; background-color:#000099; margin-left:50px;">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                 </div>
+
+
+         </div>
+            
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿a:link {
+    text-decoration : none;
+    font-size:14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:initial;
+
+}
+a:hover {
+    font-size:18px;
+    color:darkred;
+
+}
